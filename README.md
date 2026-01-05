@@ -32,6 +32,23 @@ The code will create a folder `<task>/` and put plots there after 1500 steps of 
 Most tasks may take up to 20 minutes to run, on one NVIDIA GeForce RTX 4070 GPU.
 
 
+# How to see which puzzles were solved, using the run information in this repo
+
+Run `python list_solved_puzzles.py results_for_the_blog_post/predictions_training.npz training 2000`
+
+This prints out a table indicating
+- names of solved puzzles
+- how many guesses would have been required (up to 4000) to solve each puzzle
+- total number of solved puzzles with 2 guesses
+- total number of solved puzzles
+
+You can change the 2000 to any number of inference-time steps, if you want to observe partway through the solution process. You can also change `predictions_training.npz` and `training` to `predictions_evaluation.npz` and `evaluation` to see which evaluation puzzles were solved as well. If you want the results in a text file instead, you can pipe the output into a file:
+
+```
+python list_solved_puzzles.py results_for_the_blog_post/predictions_training.npz training 2000 >> result.txt
+```
+
+
 # Tips for Reading the Code
 
 A basic description of the code files in this repo:
