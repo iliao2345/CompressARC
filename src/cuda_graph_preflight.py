@@ -1,4 +1,10 @@
-"""Small CUDA integration gate: update counts, gradients, RNG and real D4 capture."""
+"""Small CUDA integration gate: update counts, gradients, RNG and real D4 capture.
+
+Variants are ``conv``, ``combined`` and ``combined_lse``. The LSE variant cannot
+assert multi-update trajectory equality (its Triton backward accumulates a shared
+kernel gradient with atomics), so it is gated from synchronized state by
+``cuda_graph_lse_validation`` instead of the strict loop below.
+"""
 import json
 from types import SimpleNamespace
 
@@ -13,7 +19,23 @@ from compressarc.train.optimizer import create_optimizer
 from compressarc.train.device_dispatch import runtime_device_dispatch
 
 
-def real_model_check():
+def preflight_model_options(variant):
+    if variant not in ('conv','combined','combined_lse'):
+        raise ValueError('Unknown CUDA preflight variant: '+variant)
+    options = dict(shift_implementation='d4_tied_conv',
+                   direction_share_implementation='vectorized',
+                   cummax_implementation='triton_hard_grouped')
+    if variant != 'conv':
+        options.update(direction_share_implementation='d4', direction_share_packed=True)
+    if variant == 'combined_lse':
+        options.update(cummax_implementation='triton', lse_tau=0.1)
+    return options
+
+
+def real_model_check(variant="conv"):
+    if variant == 'combined_lse':
+        from cuda_graph_lse_validation import check_combined_lse
+        return check_combined_lse()
     if not torch.cuda.is_available():raise RuntimeError('CUDA preflight requires a CUDA device')
     previous=torch.get_default_device()
     old_tf32=torch.backends.cuda.matmul.allow_tf32
@@ -28,6 +50,7 @@ def real_model_check():
             'model.softmax_implementation=fused','training.optimizer_implementation=fused',
             'training.runtime_device_dispatch=explicit','training.annealing_steps=2',
             'training.cuda_graph_start=2','training.cuda_graph_warmup=2','training.iterations=8'])
+        cfg.model.update(preflight_model_options(variant))
         problem={'train':[{'input':[[0,1,0],[1,0,1],[0,1,0]],'output':[[1,0,1],[0,1,0],[1,0,1]]}],
                  'test':[{'input':[[1,0,1],[0,1,0],[1,0,1]]}]}
         pairs=[]
@@ -76,4 +99,8 @@ def real_model_check():
 
 
 if __name__=='__main__':
-    print(json.dumps(dict(cuda_graph_preflight='passed',report=real_model_check()),indent=2),flush=True)
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--variant',choices=['conv','combined','combined_lse'],default='conv')
+    args=parser.parse_args()
+    print(json.dumps(dict(cuda_graph_preflight='passed',variant=args.variant,report=real_model_check(args.variant)),indent=2),flush=True)
