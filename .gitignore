@@ -2,3 +2,7 @@
 *.pdf
 *.png
 *.npz
+results.zip
+.ipynb_checkpoints/
+.pytest_cache/
+_pytest_tmp/

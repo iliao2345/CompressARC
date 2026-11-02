@@ -60,7 +60,7 @@ def _assert_close(actual, expected, label, step, rtol, atol):
 def _max_pair_difference(left, right):
     left,right=list(left),list(right)
     if not left:return 0.
-    return max(float((a-b).abs().max()) for a,b in zip(left,right))
+    return max(float((a.detach()-b.detach()).abs().max()) for a,b in zip(left,right))
 
 
 def output_difference(first, second):
