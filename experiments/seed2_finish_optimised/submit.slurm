@@ -23,5 +23,5 @@ mamba activate SymARC
 export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK:-4}"
 export MKL_NUM_THREADS="${SLURM_CPUS_PER_TASK:-4}"
 export PYTHONUNBUFFERED=1
-# export ARC_CUDA_GRAPH=1   # opt in to CUDA Graph replay (speed only)
+export ARC_CUDA_GRAPH=1   # CUDA Graph replay: speed only, parity gated in CUDA_GRAPH.md
 srun python experiments/seed2_finish_optimised/run_job.py --index "$SLURM_ARRAY_TASK_ID"

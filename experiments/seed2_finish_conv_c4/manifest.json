@@ -1,0 +1,191 @@
+{
+  "training_seed": 2,
+  "iterations": 1500,
+  "split": "training",
+  "task_sets": {
+    "conv_missing": [
+      "08ed6ac7",
+      "1190e5a7",
+      "25ff71a9",
+      "3906de3d",
+      "694f12f3",
+      "868de0fa",
+      "8731374e",
+      "97999447",
+      "9aec4887",
+      "a416b8f3",
+      "a61ba2ce",
+      "aedd82e4",
+      "b527c5c6",
+      "bd4472b8",
+      "c9f8e694",
+      "d06dbe63",
+      "d22278a0",
+      "d5d6de2d",
+      "d9fac9be",
+      "e5062a87",
+      "eb281b96",
+      "eb5a1d5d"
+    ]
+  },
+  "queued_arms": [
+    "projected_conv_c4_triton"
+  ],
+  "alternative_arm": "projected_conv_c4_reference",
+  "jobs": [
+    {
+      "index": 0,
+      "task": "08ed6ac7",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 1,
+      "task": "1190e5a7",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 2,
+      "task": "25ff71a9",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 3,
+      "task": "3906de3d",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 4,
+      "task": "694f12f3",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 5,
+      "task": "868de0fa",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 6,
+      "task": "8731374e",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 7,
+      "task": "97999447",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 8,
+      "task": "9aec4887",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 9,
+      "task": "a416b8f3",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 10,
+      "task": "a61ba2ce",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 11,
+      "task": "aedd82e4",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 12,
+      "task": "b527c5c6",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 13,
+      "task": "bd4472b8",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 14,
+      "task": "c9f8e694",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 15,
+      "task": "d06dbe63",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 16,
+      "task": "d22278a0",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 17,
+      "task": "d5d6de2d",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 18,
+      "task": "d9fac9be",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 19,
+      "task": "e5062a87",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 20,
+      "task": "eb281b96",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    },
+    {
+      "index": 21,
+      "task": "eb5a1d5d",
+      "arm": "projected_conv_c4_triton",
+      "seed": 2,
+      "config": "configs/projected_conv_c4_triton.json"
+    }
+  ]
+}
