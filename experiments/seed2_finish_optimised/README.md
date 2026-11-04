@@ -1,7 +1,6 @@
-# Finish the seed-2 cells for the two incomplete arms
+# Finish the seed-2 LSE cells
 
-Only the missing (task, seed 2) cells are queued: 20 for the LSE arm and
-22 for the C4-conv arm, 42 runs total. Everything else at seed 2 already exists in W&B.
+Queued: the 20 (task, seed 2) cells the LSE arm is missing. Nothing else.
 
 ## Arms
 

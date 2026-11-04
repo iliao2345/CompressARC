@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --job-name=arc-seed2-finish
+#SBATCH --job-name=arc-seed2-lse
 #SBATCH --partition=gpu
 #SBATCH --account=vf38
 #SBATCH --qos=normal
@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
 #SBATCH --time=12:00:00
-#SBATCH --array=0-41%1
+#SBATCH --array=0-19%4
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=teedsingyau@gmail.com
 #SBATCH --output=slurm-seed2-finish-%A_%a.out
