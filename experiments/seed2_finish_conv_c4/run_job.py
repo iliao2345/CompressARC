@@ -11,6 +11,6 @@ j=manifest['jobs'][a.index]
 out=repo/'outputs'/folder.name/'checkpoints'/os.environ.get('SLURM_ARRAY_JOB_ID','manual')/j['task']/j['arm']/'seed_2'
 cmd=[sys.executable,str(repo/'src/train.py'),'--config',str(folder/j['config']),'--task',j['task'],'--set','training.device=cuda:0','--save-checkpoints','--output-dir',str(out)]
 if os.environ.get('ARC_CUDA_GRAPH')=='1':
-    cmd+=['--set','training.cuda_graph=true','--set','training.step_timing=off']
+    cmd+=['--set','training.cuda_graph=true','--set','training.step_timing=wall']
 print(shlex.join(cmd),flush=True)
 if not a.dry_run:subprocess.run(cmd,cwd=repo,check=True)

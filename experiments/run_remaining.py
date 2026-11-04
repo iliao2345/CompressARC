@@ -77,7 +77,7 @@ def main():
                    "--set", f"training.device={args.device}",
                    "--save-checkpoints", "--output-dir", str(out)]
         if args.cuda_graph:
-            command += ["--set", "training.cuda_graph=true", "--set", "training.step_timing=off"]
+            command += ["--set", "training.cuda_graph=true", "--set", "training.step_timing=wall"]
         if args.no_wandb:
             command += ["--set", "logging.wandb=false"]
         print(f"[{position}/{len(jobs)}] {job['task']} {job['arm']}", flush=True)
