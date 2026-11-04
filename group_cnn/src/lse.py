@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-
+import torch.nn.functional as F
 import numpy as np 
 
 from static_op import diagonal_shift_
@@ -51,6 +51,8 @@ class MorphologicalMax(nn.Module):
         support = torch.ones(L_max, dtype=torch.bool)
         self.register_buffer("support", support)
 
+
+
     def diagonal_phi(self, x, mark=None):
         """
         Canonical diagonal morphological cummax.
@@ -79,55 +81,30 @@ class MorphologicalMax(nn.Module):
             device=x.device,
             dtype=x.dtype,
         )
+        
         if mark:
             mark('allocate_diagonals')
 
-        # remember where every packed value came from
-        coordinates = []
-
-        for d in range(-(H - 1), W):
-
-            coords = []
-
-            for h in range(H):
-                w = h + d
-
-                if 0 <= w < W:
-                    coords.append((h, w))
-
-            coordinates.append(coords)
+        offsets = range(-(H - 1), W)
+        lengths = [min(H + min(d, 0), W - max(d, 0)) for d in offsets]
         if mark:
             mark('build_coordinates')
-
-        for d, coords in enumerate(coordinates):
-            for p, (h, w) in enumerate(coords):
-                diagonals[:, d, p] = x[:, h, w]
+        # diagonal() preserves the batch axis and supports rotated/strided inputs.
+        for index, (offset, length) in enumerate(zip(offsets, lengths)):
+            diagonals[:, index, :length] = x.diagonal(offset, -2, -1)
         if mark:
             mark('pack_diagonals')
 
+        
         # --------------------------------------------------
         # 2. Build f(x-u)
         #    [B, D, output_position, offset]
         # --------------------------------------------------
 
-        shifted = torch.full(
-            (B, D, L, L),
-            float("-inf"),
-            device=x.device,
-            dtype=x.dtype,
-        )
-        if mark:
-            mark('allocate_shifted')
-
-        for d, coords in enumerate(coordinates):
-            diag_len = len(coords)
-
-            for i in range(diag_len):
-                for u in range(i + 1):
-                    shifted[:, d, i, u] = diagonals[:, d, i - u]
+        padded = F.pad(diagonals, (L - 1, 0), value=float('-inf'))
+        shifted = padded.unfold(-1, L, 1).flip(-1)
         if mark:
             mark('build_shifted')
-
         # --------------------------------------------------
         # 3. Morphological kernel
         # --------------------------------------------------
@@ -135,6 +112,12 @@ class MorphologicalMax(nn.Module):
         scores = shifted + self.diagonal_kernel.view(1, 1, 1, L)
         if mark:
             mark('add_kernel')
+
+        # Unused packed positions must have finite reductions to avoid NaN gradients.
+        valid = torch.arange(L, device=x.device)[None, :] < torch.tensor(lengths, device=x.device)[:, None]
+        scores = scores.masked_fill(~valid[None, :, :, None], 0)
+        if mark:
+            mark('mask_unused_positions')
 
         # Exact morphological max
         exact_diag = scores.max(dim=-1).values
@@ -156,15 +139,15 @@ class MorphologicalMax(nn.Module):
         out = torch.empty_like(x)
         exact = torch.empty_like(x)
 
-        for d, coords in enumerate(coordinates):
-            for p, (h, w) in enumerate(coords):
-
-                out[:, h, w] = out_diag[:, d, p]
-                exact[:, h, w] = exact_diag[:, d, p]
+        for index, (offset, length) in enumerate(zip(offsets, lengths)):
+            out.diagonal(offset, -2, -1).copy_(out_diag[:, index, :length])
+            exact.diagonal(offset, -2, -1).copy_(exact_diag[:, index, :length])
         if mark:
             mark('allocate_and_scatter')
 
         return out, exact
+
+
 
 
 
@@ -179,21 +162,13 @@ class MorphologicalMax(nn.Module):
         if mark:
             mark('reshape_input')
 
-        x_shifted = torch.full(
-            (x_flat.shape[0], W, W),
-            float("-inf"),
-            device=x.device,
-            dtype=x.dtype
-        )
-        if mark:
-            mark('allocate_shifted')
+        # Reverse windows so offset u still selects x[i - u].
+        x_pad = F.pad(x_flat, (W - 1, 0), value=float("-inf"))
+        x_shifted = x_pad.unfold(-1, W, 1).flip(-1)
 
-        for i in range(W):
-            for u in range(i + 1):
-                x_shifted[:, i, u] = x_flat[:, i - u]
         if mark:
             mark('build_shifted')
-
+        
         kernel = self.kernel[:W]
         support = self.support[:W]
         scores = x_shifted + kernel.view(1, 1, W)
