@@ -1,0 +1,399 @@
+[
+  {
+    "id": "w1z6bh1h",
+    "name": "3eda0437-training-projected_lse_sample20-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample20",
+      "seed2",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "vuglneg3",
+    "name": "445eab21-training-projected_lse_sample20-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample20",
+      "seed2",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "nmvzzdfu",
+    "name": "1bfc4729-training-projected_lse_sample20-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample20",
+      "seed2",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "upwoom96",
+    "name": "3eda0437-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "caqjqn9c",
+    "name": "0dfd9992-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "kbr4xm9t",
+    "name": "95990924-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "kvj2r53n",
+    "name": "7f4411dc-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "m8func1i",
+    "name": "6f8cd79b-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "258j0fdm",
+    "name": "445eab21-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "0yek26ic",
+    "name": "3bdb4ada-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "u2o2kuo2",
+    "name": "36fdfd69-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "97r0nyux",
+    "name": "d43fd935-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "ujk12s50",
+    "name": "1c786137-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "b2o3as2l",
+    "name": "1bfc4729-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "1babdcy3",
+    "name": "3aa6fb7a-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "jptobjgq",
+    "name": "6cdd2623-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "drqry2js",
+    "name": "74dd1130-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "38h4ucn0",
+    "name": "f8c80d96-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "4gvgknz0",
+    "name": "623ea044-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  },
+  {
+    "id": "8owhoag8",
+    "name": "d406998b-training-projected_lse_seed2_sample40-seed2",
+    "state": "finished",
+    "tags": [
+      "arc-agi",
+      "final-ablation",
+      "projected-lse",
+      "sample40",
+      "seed2",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "training"
+    ],
+    "summary": {
+      "train_step": 1499,
+      "run/status": "finished"
+    }
+  }
+]

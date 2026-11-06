@@ -1,0 +1,351 @@
+{
+  "generated_utc": "2026-10-30T05:13:51.788539+00:00",
+  "training_seed": 2,
+  "iterations": 1500,
+  "split": "training",
+  "task_ids": [
+    "3eda0437",
+    "0dfd9992",
+    "95990924",
+    "7f4411dc",
+    "6f8cd79b",
+    "445eab21",
+    "3bdb4ada",
+    "36fdfd69",
+    "d43fd935",
+    "1c786137",
+    "1bfc4729",
+    "3aa6fb7a",
+    "6cdd2623",
+    "74dd1130",
+    "f8c80d96",
+    "623ea044",
+    "d406998b",
+    "6d75e8bb",
+    "d9fac9be",
+    "97999447",
+    "1190e5a7",
+    "694f12f3",
+    "eb281b96",
+    "3906de3d",
+    "a61ba2ce",
+    "868de0fa",
+    "e5062a87",
+    "eb5a1d5d",
+    "25ff71a9",
+    "a416b8f3",
+    "d06dbe63",
+    "aedd82e4",
+    "d22278a0",
+    "08ed6ac7",
+    "b527c5c6",
+    "9aec4887",
+    "c9f8e694",
+    "8731374e",
+    "d5d6de2d",
+    "bd4472b8"
+  ],
+  "cohorts": {
+    "original20": [
+      "3eda0437",
+      "0dfd9992",
+      "95990924",
+      "7f4411dc",
+      "6f8cd79b",
+      "445eab21",
+      "3bdb4ada",
+      "36fdfd69",
+      "d43fd935",
+      "1c786137",
+      "1bfc4729",
+      "3aa6fb7a",
+      "6cdd2623",
+      "74dd1130",
+      "f8c80d96",
+      "623ea044",
+      "d406998b",
+      "6d75e8bb",
+      "d9fac9be",
+      "97999447"
+    ],
+    "additional20": [
+      "1190e5a7",
+      "694f12f3",
+      "eb281b96",
+      "3906de3d",
+      "a61ba2ce",
+      "868de0fa",
+      "e5062a87",
+      "eb5a1d5d",
+      "25ff71a9",
+      "a416b8f3",
+      "d06dbe63",
+      "aedd82e4",
+      "d22278a0",
+      "08ed6ac7",
+      "b527c5c6",
+      "9aec4887",
+      "c9f8e694",
+      "8731374e",
+      "d5d6de2d",
+      "bd4472b8"
+    ]
+  },
+  "dataset_sha256": "5b02a4753e9088134744d952b048a03f6f23abf4eb6c04e3f27822cf3d439634",
+  "source_manifest_sha256": "b10dad8f5305a7fca7a205583724068c70576cc51ad5d080b861394b4c9ccf43",
+  "task_selection": "Same frozen 40 tasks; selected variants only; skip verified completed/active pairs, never filter by accuracy",
+  "completed": {
+    "projected_lse": {
+      "3eda0437": [
+        "w1z6bh1h",
+        "upwoom96"
+      ],
+      "445eab21": [
+        "vuglneg3",
+        "258j0fdm"
+      ],
+      "1bfc4729": [
+        "nmvzzdfu",
+        "b2o3as2l"
+      ],
+      "0dfd9992": [
+        "caqjqn9c"
+      ],
+      "95990924": [
+        "kbr4xm9t"
+      ],
+      "7f4411dc": [
+        "kvj2r53n"
+      ],
+      "6f8cd79b": [
+        "m8func1i"
+      ],
+      "3bdb4ada": [
+        "0yek26ic"
+      ],
+      "36fdfd69": [
+        "u2o2kuo2"
+      ],
+      "d43fd935": [
+        "97r0nyux"
+      ],
+      "1c786137": [
+        "ujk12s50"
+      ],
+      "3aa6fb7a": [
+        "1babdcy3"
+      ],
+      "6cdd2623": [
+        "jptobjgq"
+      ],
+      "74dd1130": [
+        "drqry2js"
+      ],
+      "f8c80d96": [
+        "38h4ucn0"
+      ],
+      "623ea044": [
+        "4gvgknz0"
+      ],
+      "d406998b": [
+        "8owhoag8"
+      ]
+    }
+  },
+  "active": {
+    "projected_lse": {}
+  },
+  "jobs": [
+    {
+      "index": 0,
+      "task": "6d75e8bb",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 1,
+      "task": "d9fac9be",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 2,
+      "task": "97999447",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 3,
+      "task": "1190e5a7",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 4,
+      "task": "694f12f3",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 5,
+      "task": "eb281b96",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 6,
+      "task": "3906de3d",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 7,
+      "task": "a61ba2ce",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 8,
+      "task": "868de0fa",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 9,
+      "task": "e5062a87",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 10,
+      "task": "eb5a1d5d",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 11,
+      "task": "25ff71a9",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 12,
+      "task": "a416b8f3",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 13,
+      "task": "d06dbe63",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 14,
+      "task": "aedd82e4",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 15,
+      "task": "d22278a0",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 16,
+      "task": "08ed6ac7",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 17,
+      "task": "b527c5c6",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 18,
+      "task": "9aec4887",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 19,
+      "task": "c9f8e694",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 20,
+      "task": "8731374e",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 21,
+      "task": "d5d6de2d",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 22,
+      "task": "bd4472b8",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    }
+  ],
+  "counts": {
+    "projected_lse": {
+      "completed": 17,
+      "active": 0,
+      "remaining": 23
+    }
+  }
+}

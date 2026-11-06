@@ -1,0 +1,11 @@
+# Shift replacement only. Direct Triton depthwise convolution with input and tied-weight backward.
+# Preserves learned 3x3 tying, masks, projections, normalization, and residuals.
+experiment:
+  name: projected_shift_triton
+model:
+  shift_implementation: triton
+  cummax_implementation: primitives
+  direction_share_implementation: primitives
+  layer_timing: false
+training:
+  device: cuda:0

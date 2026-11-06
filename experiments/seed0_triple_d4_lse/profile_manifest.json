@@ -1,0 +1,24 @@
+{
+  "selection": "Smallest, upper-median, largest max-height * max-width among the frozen 40 tasks; ties sorted by task ID; independent of results.",
+  "tasks": [
+    {
+      "task": "25ff71a9",
+      "padded_area_proxy": 9
+    },
+    {
+      "task": "6d75e8bb",
+      "padded_area_proxy": 154
+    },
+    {
+      "task": "1190e5a7",
+      "padded_area_proxy": 729
+    }
+  ],
+  "warmup_steps": 20,
+  "measured_steps": 100,
+  "repeats": 3,
+  "variants": [
+    "hard_reference",
+    "triple_d4_lse"
+  ]
+}

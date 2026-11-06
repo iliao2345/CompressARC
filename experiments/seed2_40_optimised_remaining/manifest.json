@@ -1,0 +1,927 @@
+{
+  "generated_utc": "2026-10-29T19:19:17.281938+00:00",
+  "training_seed": 2,
+  "iterations": 1500,
+  "split": "training",
+  "task_ids": [
+    "3eda0437",
+    "0dfd9992",
+    "95990924",
+    "7f4411dc",
+    "6f8cd79b",
+    "445eab21",
+    "3bdb4ada",
+    "36fdfd69",
+    "d43fd935",
+    "1c786137",
+    "1bfc4729",
+    "3aa6fb7a",
+    "6cdd2623",
+    "74dd1130",
+    "f8c80d96",
+    "623ea044",
+    "d406998b",
+    "6d75e8bb",
+    "d9fac9be",
+    "97999447",
+    "1190e5a7",
+    "694f12f3",
+    "eb281b96",
+    "3906de3d",
+    "a61ba2ce",
+    "868de0fa",
+    "e5062a87",
+    "eb5a1d5d",
+    "25ff71a9",
+    "a416b8f3",
+    "d06dbe63",
+    "aedd82e4",
+    "d22278a0",
+    "08ed6ac7",
+    "b527c5c6",
+    "9aec4887",
+    "c9f8e694",
+    "8731374e",
+    "d5d6de2d",
+    "bd4472b8"
+  ],
+  "cohorts": {
+    "original20": [
+      "3eda0437",
+      "0dfd9992",
+      "95990924",
+      "7f4411dc",
+      "6f8cd79b",
+      "445eab21",
+      "3bdb4ada",
+      "36fdfd69",
+      "d43fd935",
+      "1c786137",
+      "1bfc4729",
+      "3aa6fb7a",
+      "6cdd2623",
+      "74dd1130",
+      "f8c80d96",
+      "623ea044",
+      "d406998b",
+      "6d75e8bb",
+      "d9fac9be",
+      "97999447"
+    ],
+    "additional20": [
+      "1190e5a7",
+      "694f12f3",
+      "eb281b96",
+      "3906de3d",
+      "a61ba2ce",
+      "868de0fa",
+      "e5062a87",
+      "eb5a1d5d",
+      "25ff71a9",
+      "a416b8f3",
+      "d06dbe63",
+      "aedd82e4",
+      "d22278a0",
+      "08ed6ac7",
+      "b527c5c6",
+      "9aec4887",
+      "c9f8e694",
+      "8731374e",
+      "d5d6de2d",
+      "bd4472b8"
+    ]
+  },
+  "dataset_sha256": "5b02a4753e9088134744d952b048a03f6f23abf4eb6c04e3f27822cf3d439634",
+  "source_manifest_sha256": "b10dad8f5305a7fca7a205583724068c70576cc51ad5d080b861394b4c9ccf43",
+  "task_selection": "Same frozen 40 tasks; selected variants only; skip verified completed/active pairs, never filter by accuracy",
+  "completed": {
+    "projected_conv_d4": {},
+    "projected_d4": {
+      "3eda0437": [
+        "cv3i041g",
+        "bcuctd41"
+      ],
+      "0dfd9992": [
+        "qs3gkkhu",
+        "jdnopldn"
+      ],
+      "445eab21": [
+        "r0fxyxsl",
+        "l9bm0der"
+      ],
+      "1bfc4729": [
+        "9wq54ljj",
+        "9li58szm"
+      ],
+      "623ea044": [
+        "two0hpnc",
+        "c9uwkmxr"
+      ],
+      "3bdb4ada": [
+        "pcw2l3ta",
+        "beu58jbi"
+      ],
+      "95990924": [
+        "oegbg7p8"
+      ],
+      "7f4411dc": [
+        "h8u5jsay"
+      ],
+      "6f8cd79b": [
+        "o2fmge7b"
+      ],
+      "36fdfd69": [
+        "db9wb2t8"
+      ],
+      "d43fd935": [
+        "5zjk4c86"
+      ],
+      "1c786137": [
+        "xsoa6d74"
+      ],
+      "3aa6fb7a": [
+        "y3fhxdne"
+      ],
+      "6cdd2623": [
+        "50in1jsm"
+      ],
+      "74dd1130": [
+        "9wor1rzd"
+      ],
+      "f8c80d96": [
+        "85jwiw9p"
+      ],
+      "d406998b": [
+        "adxkd6s0"
+      ]
+    },
+    "projected_lse": {
+      "3eda0437": [
+        "w1z6bh1h",
+        "upwoom96"
+      ],
+      "445eab21": [
+        "vuglneg3",
+        "258j0fdm"
+      ],
+      "1bfc4729": [
+        "nmvzzdfu",
+        "b2o3as2l"
+      ],
+      "0dfd9992": [
+        "caqjqn9c"
+      ],
+      "95990924": [
+        "kbr4xm9t"
+      ],
+      "7f4411dc": [
+        "kvj2r53n"
+      ],
+      "6f8cd79b": [
+        "m8func1i"
+      ],
+      "3bdb4ada": [
+        "0yek26ic"
+      ],
+      "36fdfd69": [
+        "u2o2kuo2"
+      ],
+      "d43fd935": [
+        "97r0nyux"
+      ],
+      "1c786137": [
+        "ujk12s50"
+      ],
+      "3aa6fb7a": [
+        "1babdcy3"
+      ],
+      "6cdd2623": [
+        "jptobjgq"
+      ],
+      "74dd1130": [
+        "drqry2js"
+      ],
+      "f8c80d96": [
+        "38h4ucn0"
+      ],
+      "623ea044": [
+        "4gvgknz0"
+      ],
+      "d406998b": [
+        "8owhoag8"
+      ]
+    }
+  },
+  "active": {
+    "projected_conv_d4": {},
+    "projected_d4": {},
+    "projected_lse": {}
+  },
+  "jobs": [
+    {
+      "index": 0,
+      "task": "3eda0437",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 1,
+      "task": "6d75e8bb",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 2,
+      "task": "6d75e8bb",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 3,
+      "task": "0dfd9992",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 4,
+      "task": "d9fac9be",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 5,
+      "task": "d9fac9be",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 6,
+      "task": "95990924",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 7,
+      "task": "97999447",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 8,
+      "task": "97999447",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 9,
+      "task": "7f4411dc",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 10,
+      "task": "1190e5a7",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 11,
+      "task": "1190e5a7",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 12,
+      "task": "6f8cd79b",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 13,
+      "task": "694f12f3",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 14,
+      "task": "694f12f3",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 15,
+      "task": "445eab21",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 16,
+      "task": "eb281b96",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 17,
+      "task": "eb281b96",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 18,
+      "task": "3bdb4ada",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 19,
+      "task": "3906de3d",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 20,
+      "task": "3906de3d",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 21,
+      "task": "36fdfd69",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 22,
+      "task": "a61ba2ce",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 23,
+      "task": "a61ba2ce",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 24,
+      "task": "d43fd935",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 25,
+      "task": "868de0fa",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 26,
+      "task": "868de0fa",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 27,
+      "task": "1c786137",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 28,
+      "task": "e5062a87",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 29,
+      "task": "e5062a87",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 30,
+      "task": "1bfc4729",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 31,
+      "task": "eb5a1d5d",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 32,
+      "task": "eb5a1d5d",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 33,
+      "task": "3aa6fb7a",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 34,
+      "task": "25ff71a9",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 35,
+      "task": "25ff71a9",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 36,
+      "task": "6cdd2623",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 37,
+      "task": "a416b8f3",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 38,
+      "task": "a416b8f3",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 39,
+      "task": "74dd1130",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 40,
+      "task": "d06dbe63",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 41,
+      "task": "d06dbe63",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 42,
+      "task": "f8c80d96",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 43,
+      "task": "aedd82e4",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 44,
+      "task": "aedd82e4",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 45,
+      "task": "623ea044",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 46,
+      "task": "d22278a0",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 47,
+      "task": "d22278a0",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 48,
+      "task": "d406998b",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 49,
+      "task": "08ed6ac7",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 50,
+      "task": "08ed6ac7",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 51,
+      "task": "6d75e8bb",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 52,
+      "task": "b527c5c6",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 53,
+      "task": "b527c5c6",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 54,
+      "task": "d9fac9be",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 55,
+      "task": "9aec4887",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 56,
+      "task": "9aec4887",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 57,
+      "task": "97999447",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "original20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 58,
+      "task": "c9f8e694",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 59,
+      "task": "c9f8e694",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 60,
+      "task": "1190e5a7",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 61,
+      "task": "8731374e",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 62,
+      "task": "8731374e",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 63,
+      "task": "694f12f3",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 64,
+      "task": "d5d6de2d",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 65,
+      "task": "d5d6de2d",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 66,
+      "task": "eb281b96",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 67,
+      "task": "bd4472b8",
+      "variant": "projected_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_d4.json"
+    },
+    {
+      "index": 68,
+      "task": "bd4472b8",
+      "variant": "projected_lse",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_lse.json"
+    },
+    {
+      "index": 69,
+      "task": "3906de3d",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 70,
+      "task": "a61ba2ce",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 71,
+      "task": "868de0fa",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 72,
+      "task": "e5062a87",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 73,
+      "task": "eb5a1d5d",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 74,
+      "task": "25ff71a9",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 75,
+      "task": "a416b8f3",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 76,
+      "task": "d06dbe63",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 77,
+      "task": "aedd82e4",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 78,
+      "task": "d22278a0",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 79,
+      "task": "08ed6ac7",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 80,
+      "task": "b527c5c6",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 81,
+      "task": "9aec4887",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 82,
+      "task": "c9f8e694",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 83,
+      "task": "8731374e",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 84,
+      "task": "d5d6de2d",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    },
+    {
+      "index": 85,
+      "task": "bd4472b8",
+      "variant": "projected_conv_d4",
+      "seed": 2,
+      "cohort": "additional20",
+      "config": "configs/projected_conv_d4.json"
+    }
+  ],
+  "counts": {
+    "projected_conv_d4": {
+      "completed": 0,
+      "active": 0,
+      "remaining": 40
+    },
+    "projected_d4": {
+      "completed": 17,
+      "active": 0,
+      "remaining": 23
+    },
+    "projected_lse": {
+      "completed": 17,
+      "active": 0,
+      "remaining": 23
+    }
+  }
+}

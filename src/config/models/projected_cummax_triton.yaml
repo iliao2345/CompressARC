@@ -1,0 +1,12 @@
+# Projected cummax replacement only. Triton cardinal + diagonal forward/backward. Requires Linux CUDA FP32.
+# Other model/training settings inherit default.yaml.
+experiment:
+  name: projected_cummax_triton
+model:
+  shift_implementation: primitives
+  cummax_implementation: triton
+  direction_share_implementation: primitives
+  lse_tau: 0.1
+  layer_timing: false
+training:
+  device: cuda:0

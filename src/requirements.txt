@@ -1,0 +1,24 @@
+# Shared dependencies for training, timing, and correctness tests.
+# Use Python 3.11 for the pinned Lightning AI environment.
+# Install from the repository root: python -m pip install -r src/requirements.txt
+
+# Training and visualization (including optional latent PCA).
+matplotlib==3.10.0
+numpy==2.2.2
+torch==2.5.1
+tqdm==4.66.6
+omegaconf==2.3.0
+
+# W&B scalar/image logging and final .pt checkpoint artifacts.
+
+# Direction-share, LSE, shift, and training correctness suites.
+pytest==9.1.1
+
+# Imported by Triton 3.1 at runtime, including in fresh virtual environments.
+setuptools==75.8.0
+
+# Triton matches torch 2.5.1 on Linux x86_64.
+# Required by final_pilot_8.yaml and other configs selecting a Triton backend.
+# GPU execution requires CUDA; native Windows skips this dependency.
+triton==3.1.0; platform_system == "Linux" and platform_machine == "x86_64"
+wandb==0.28.1

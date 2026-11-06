@@ -1,0 +1,72 @@
+# Controlled ablation: 20 tasks, three matched training seeds.
+model:
+  multitensor_constraints: strict
+  n_layers: 4
+  channel_dim_shared: 16
+  channel_dim_grid: 8
+  share_up_dim: 16
+  share_down_dim: 8
+  decoding_dim: 4
+  softmax_dim: 2
+  cummax_dim: 4
+  shift_dim: 4
+  nonlinear_dim: 16
+  shift_implementation: primitives
+  cummax_implementation: primitives
+  lse_tau: 0.1
+  layer_timing: false
+  direction_share_implementation: d4
+  direction_share_dim: 8
+training:
+  split: training
+  iterations: 1500
+  learning_rate: 0.01
+  optimizer_betas:
+  - 0.5
+  - 0.9
+  seed: 0
+  device: auto
+  kl_weight: 1.0
+  reconstruction_weight: 10.0
+  shape_annealing_start: 0.01
+  marginal_annealing_start: 0.1
+  annealing_steps: 100
+logging:
+  wandb: true
+  wandb_project: compressarc-final-ablation
+  wandb_entity: arc_agi
+  wandb_mode: online
+  wandb_tags:
+  - final-ablation
+  - sample20
+  - steps1500
+  - strict
+experiment:
+  name: projected_d4_sample20
+  task_ids:
+  - 3eda0437
+  - 0dfd9992
+  - '95990924'
+  - 7f4411dc
+  - 6f8cd79b
+  - 445eab21
+  - 3bdb4ada
+  - 36fdfd69
+  - d43fd935
+  - 1c786137
+  - 1bfc4729
+  - 3aa6fb7a
+  - 6cdd2623
+  - 74dd1130
+  - f8c80d96
+  - 623ea044
+  - d406998b
+  - 6d75e8bb
+  - d9fac9be
+  - '97999447'
+  task_sample_seed: 42
+  seeds:
+  - 0
+  - 1
+  - 2
+  variant: projected-d4

@@ -1,0 +1,13 @@
+# Complete projected system: conv2d shift + projected D4 + Triton LSE.
+# Shares the baseline dimensions, optimizer, loss, and seed from default.yaml.
+experiment:
+  name: all_projected_triton_lse
+model:
+  shift_implementation: tied_conv
+  direction_share_implementation: d4
+  direction_share_dim: 8
+  cummax_implementation: triton
+  lse_tau: 0.1
+  layer_timing: false
+training:
+  device: cuda:0

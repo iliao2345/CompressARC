@@ -1,0 +1,9 @@
+# All three projected replacements. Other settings inherit default.yaml.
+experiment:
+  name: all_projected
+model:
+  shift_implementation: tied_conv
+  cummax_implementation: optimised
+  direction_share_implementation: d4
+  direction_share_dim: 8
+  layer_timing: false

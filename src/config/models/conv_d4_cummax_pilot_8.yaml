@@ -1,0 +1,27 @@
+# Projected conv2d shift + projected D4; retain original hard cummax.
+# Full training on the original eight pilot tasks: 1500 updates, seed 0.
+# Fixed budget: the current trainer does not implement legacy early stopping.
+experiment:
+  name: conv_d4_cummax_pilot8_seed0
+  task_ids:
+    - "0dfd9992"
+    - "22eb0ac0"
+    - "239be575"
+    - "50cb2852"
+    - "54d82841"
+    - "623ea044"
+    - "c1d99e64"
+    - "ec883f72"
+model:
+  shift_implementation: tied_conv
+  direction_share_implementation: d4
+  direction_share_dim: 8
+  cummax_implementation: primitives
+  multitensor_constraints: strict
+  lse_tau: 0.1
+  layer_timing: false
+training:
+  split: training
+  iterations: 1500
+  seed: 0
+  device: cuda:0

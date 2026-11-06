@@ -1,0 +1,1 @@
+Frozen original primitive-model source from CompressARC master snapshot 8282287. Do not update this reference to follow refactored code. The loader temporarily isolates legacy module names; projected backends are not selected.

@@ -1,0 +1,80 @@
+{
+  "model": {
+    "multitensor_constraints": "strict",
+    "n_layers": 4,
+    "channel_dim_shared": 16,
+    "channel_dim_grid": 8,
+    "share_up_dim": 16,
+    "share_down_dim": 8,
+    "decoding_dim": 4,
+    "softmax_dim": 2,
+    "cummax_dim": 4,
+    "shift_dim": 4,
+    "nonlinear_dim": 16,
+    "shift_implementation": "primitives",
+    "cummax_implementation": "primitives",
+    "lse_tau": 0.1,
+    "layer_timing": false,
+    "direction_share_implementation": "d4",
+    "direction_share_dim": 8
+  },
+  "training": {
+    "split": "training",
+    "iterations": 1500,
+    "learning_rate": 0.01,
+    "optimizer_betas": [
+      0.5,
+      0.9
+    ],
+    "seed": 0,
+    "device": "auto",
+    "kl_weight": 1.0,
+    "reconstruction_weight": 10.0,
+    "shape_annealing_start": 0.01,
+    "marginal_annealing_start": 0.1,
+    "annealing_steps": 100
+  },
+  "logging": {
+    "wandb": true,
+    "wandb_project": "compressarc-final-ablation",
+    "wandb_entity": "arc_agi",
+    "wandb_mode": "online",
+    "wandb_tags": [
+      "final-ablation",
+      "additional20",
+      "uniform-sample",
+      "steps1500",
+      "strict"
+    ]
+  },
+  "experiment": {
+    "name": "projected_d4_additional20",
+    "task_ids": [
+      "1190e5a7",
+      "694f12f3",
+      "eb281b96",
+      "3906de3d",
+      "a61ba2ce",
+      "868de0fa",
+      "e5062a87",
+      "eb5a1d5d",
+      "25ff71a9",
+      "a416b8f3",
+      "d06dbe63",
+      "aedd82e4",
+      "d22278a0",
+      "08ed6ac7",
+      "b527c5c6",
+      "9aec4887",
+      "c9f8e694",
+      "8731374e",
+      "d5d6de2d",
+      "bd4472b8"
+    ],
+    "task_sample_seed": 43,
+    "seeds": [
+      0
+    ],
+    "variant": "projected-d4"
+  }
+}

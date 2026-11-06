@@ -1,0 +1,8 @@
+# Shift replacement only. Other dimensions and training settings inherit default.yaml.
+experiment:
+  name: projected_shift
+model:
+  shift_implementation: tied_conv
+  cummax_implementation: primitives
+  direction_share_implementation: primitives
+  layer_timing: false

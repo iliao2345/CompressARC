@@ -1,0 +1,244 @@
+{
+  "training_seed": 2,
+  "iterations": 1500,
+  "split": "training",
+  "task_sets": {
+    "canonical40": [
+      "3eda0437",
+      "0dfd9992",
+      "95990924",
+      "7f4411dc",
+      "6f8cd79b",
+      "445eab21",
+      "3bdb4ada",
+      "36fdfd69",
+      "d43fd935",
+      "1c786137",
+      "1bfc4729",
+      "3aa6fb7a",
+      "6cdd2623",
+      "74dd1130",
+      "f8c80d96",
+      "623ea044",
+      "d406998b",
+      "6d75e8bb",
+      "d9fac9be",
+      "97999447",
+      "1190e5a7",
+      "694f12f3",
+      "eb281b96",
+      "3906de3d",
+      "a61ba2ce",
+      "868de0fa",
+      "e5062a87",
+      "eb5a1d5d",
+      "25ff71a9",
+      "a416b8f3",
+      "d06dbe63",
+      "aedd82e4",
+      "d22278a0",
+      "08ed6ac7",
+      "b527c5c6",
+      "9aec4887",
+      "c9f8e694",
+      "8731374e",
+      "d5d6de2d",
+      "bd4472b8"
+    ],
+    "lse_missing": [
+      "08ed6ac7",
+      "1190e5a7",
+      "25ff71a9",
+      "3906de3d",
+      "694f12f3",
+      "868de0fa",
+      "8731374e",
+      "9aec4887",
+      "a416b8f3",
+      "a61ba2ce",
+      "aedd82e4",
+      "b527c5c6",
+      "bd4472b8",
+      "c9f8e694",
+      "d06dbe63",
+      "d22278a0",
+      "d5d6de2d",
+      "e5062a87",
+      "eb281b96",
+      "eb5a1d5d"
+    ],
+    "conv_missing": [
+      "08ed6ac7",
+      "1190e5a7",
+      "25ff71a9",
+      "3906de3d",
+      "694f12f3",
+      "868de0fa",
+      "8731374e",
+      "97999447",
+      "9aec4887",
+      "a416b8f3",
+      "a61ba2ce",
+      "aedd82e4",
+      "b527c5c6",
+      "bd4472b8",
+      "c9f8e694",
+      "d06dbe63",
+      "d22278a0",
+      "d5d6de2d",
+      "d9fac9be",
+      "e5062a87",
+      "eb281b96",
+      "eb5a1d5d"
+    ]
+  },
+  "jobs": [
+    {
+      "index": 0,
+      "task": "08ed6ac7",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 1,
+      "task": "1190e5a7",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 2,
+      "task": "25ff71a9",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 3,
+      "task": "3906de3d",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 4,
+      "task": "694f12f3",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 5,
+      "task": "868de0fa",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 6,
+      "task": "8731374e",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 7,
+      "task": "9aec4887",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 8,
+      "task": "a416b8f3",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 9,
+      "task": "a61ba2ce",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 10,
+      "task": "aedd82e4",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 11,
+      "task": "b527c5c6",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 12,
+      "task": "bd4472b8",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 13,
+      "task": "c9f8e694",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 14,
+      "task": "d06dbe63",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 15,
+      "task": "d22278a0",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 16,
+      "task": "d5d6de2d",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 17,
+      "task": "e5062a87",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 18,
+      "task": "eb281b96",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    },
+    {
+      "index": 19,
+      "task": "eb5a1d5d",
+      "arm": "projected_lse_optimised",
+      "seed": 2,
+      "config": "configs/projected_lse_optimised.json"
+    }
+  ],
+  "queued_arms": [
+    "projected_lse_optimised"
+  ],
+  "deferred_arms": [
+    "projected_conv_c4_triton",
+    "projected_conv_c4_reference"
+  ]
+}

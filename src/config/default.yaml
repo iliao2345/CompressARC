@@ -1,0 +1,68 @@
+model:
+  multitensor_constraints: strict
+  n_layers: 4
+  channel_dim_shared: 16
+  channel_dim_grid: 8
+  share_up_dim: 16
+  share_down_dim: 8
+  # Sharing: primitives | reuse | batched | reuse_fused_norm (FP32 CUDA norm fusion).
+  share_implementation: primitives
+  share_batch_max_elements: 262144
+  decoding_dim: 4
+  softmax_dim: 2
+  # Same semantic subsets: primitives | fused (native PyTorch softmax).
+  softmax_implementation: primitives
+  cummax_dim: 4
+  shift_dim: 4
+  nonlinear_dim: 16
+  # shift: primitives | c4_tied_conv | d4_tied_conv | tied_conv (legacy C4 alias) | unfold | triton
+  # C4 conv/unfold/Triton enforce rotations; d4_tied_conv also enforces reflections.
+  shift_implementation: primitives
+  # cummax: primitives | triton_hard | triton_hard_grouped (hard max) | d4 (LSE) | optimised (LSE) | triton (LSE)
+  cummax_implementation: primitives
+  lse_tau: 0.1
+  layer_timing: false
+  # direction share: primitives | vectorized | vectorized_packed (same leaves, packed gradients) | d4 (projected pilot wrapper)
+  direction_share_implementation: primitives
+  direction_share_dim: 8
+
+training:
+  split: training
+  iterations: 2000
+  learning_rate: 0.01
+  optimizer_betas: [0.5, 0.9]
+  # default: unchanged Adam selection; fused: CUDA fused Adam.
+  optimizer_implementation: default
+  # reference: existing checks; triton: direct CUDA scans with exact counts.
+  diagnostics_implementation: reference
+  seed: 0
+  device: auto
+  # global: original default-device mode; explicit: disable it after setup.
+  runtime_device_dispatch: global
+  # off: unchanged path; wall: whole-step; phases: detailed host/CUDA stream timings.
+  step_timing: "off"
+  # Opt-in forward/loss/backward graph; Adam and CPU tracking remain eager.
+  cuda_graph: false
+  cuda_graph_start: 100
+  cuda_graph_warmup: 3
+  sharing_stage_timing: false
+  operator_profile: false
+  operator_profile_start: 10
+  operator_profile_steps: 1
+  operator_profile_shapes: true
+  operator_profile_memory: false
+  operator_profile_stack: false
+  kl_weight: 1.0
+  reconstruction_weight: 10.0
+  shape_annealing_start: 0.01
+  marginal_annealing_start: 0.1
+  annealing_steps: 100
+
+
+logging:
+  # Profiling driver disables model saving; explicit --save-checkpoints still saves.
+  save_model: true
+  wandb: false
+  wandb_project: compressarc-final-ablation
+  wandb_entity: null
+  wandb_mode: online

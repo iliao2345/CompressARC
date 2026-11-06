@@ -1,0 +1,9 @@
+# Shift replacement only. Explicit im2col + multiplication.
+# Preserves learned 3x3 tying, masks, projections, normalization, and residuals.
+experiment:
+  name: projected_shift_unfold
+model:
+  shift_implementation: unfold
+  cummax_implementation: primitives
+  direction_share_implementation: primitives
+  layer_timing: false

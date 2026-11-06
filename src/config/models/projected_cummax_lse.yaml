@@ -1,0 +1,8 @@
+# Optimized projected LSE replacement only. Other dimensions and training settings inherit default.yaml.
+experiment:
+  name: projected_cummax_lse
+model:
+  shift_implementation: primitives
+  cummax_implementation: optimised
+  direction_share_implementation: primitives
+  layer_timing: false

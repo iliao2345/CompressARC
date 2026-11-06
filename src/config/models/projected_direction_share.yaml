@@ -1,0 +1,9 @@
+# Original pilot projected D4 replacement only. Other settings inherit default.yaml.
+experiment:
+  name: projected_direction_share
+model:
+  shift_implementation: primitives
+  cummax_implementation: primitives
+  direction_share_implementation: d4
+  direction_share_dim: 8
+  layer_timing: false

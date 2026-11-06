@@ -1,0 +1,20 @@
+== per-seed, all 40 tasks where available ==
+variant          seed   n        top-1       pass@2     ever gen
+original         0     40  18 ( 45.0%)  20 ( 50.0%)  26 ( 65.0%)
+original         2     40  19 ( 47.5%)  23 ( 57.5%)  27 ( 67.5%)
+projected_conv   0     40  18 ( 45.0%)  20 ( 50.0%)  28 ( 70.0%)
+projected_conv   2     18  13 ( 72.2%)  13 ( 72.2%)  16 ( 88.9%)
+projected_d4     0     40  16 ( 40.0%)  16 ( 40.0%)  27 ( 67.5%)
+projected_d4     2     40  19 ( 47.5%)  22 ( 55.0%)  27 ( 67.5%)
+projected_lse    0     40  15 ( 37.5%)  18 ( 45.0%)  26 ( 65.0%)
+projected_lse    2     20  11 ( 55.0%)  13 ( 65.0%)  19 ( 95.0%)
+projected_conv_d4 0     40  20 ( 50.0%)  23 ( 57.5%)  26 ( 65.0%)
+projected_conv_d4 2     40  19 ( 47.5%)  22 ( 55.0%)  26 ( 65.0%)
+
+== pooled over both seeds ==
+variant          tasks cells        top-1       pass@2     ever gen
+original            40    80  37 ( 46.2%)  43 ( 53.8%)  53 ( 66.2%)
+projected_conv      18    36  27 ( 75.0%)  27 ( 75.0%)  33 ( 91.7%)
+projected_d4        40    80  35 ( 43.8%)  38 ( 47.5%)  54 ( 67.5%)
+projected_lse       20    40  22 ( 55.0%)  26 ( 65.0%)  37 ( 92.5%)
+projected_conv_d4    40    80  39 ( 48.8%)  45 ( 56.2%)  52 ( 65.0%)

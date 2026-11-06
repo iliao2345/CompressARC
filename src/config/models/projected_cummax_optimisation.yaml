@@ -1,0 +1,10 @@
+# Projected cummax replacement only. Same optimisation.py backend as projected_cummax_lse.yaml.
+# Other model/training settings inherit default.yaml.
+experiment:
+  name: projected_cummax_optimisation
+model:
+  shift_implementation: primitives
+  cummax_implementation: optimised
+  direction_share_implementation: primitives
+  lse_tau: 0.1
+  layer_timing: false

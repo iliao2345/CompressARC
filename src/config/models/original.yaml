@@ -1,0 +1,8 @@
+# Essential baseline. Other dimensions and training settings inherit default.yaml.
+experiment:
+  name: original
+model:
+  shift_implementation: primitives
+  cummax_implementation: primitives
+  direction_share_implementation: primitives
+  layer_timing: false
