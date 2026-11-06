@@ -1,0 +1,101 @@
+{
+  "model": {
+    "multitensor_constraints": "strict",
+    "n_layers": 4,
+    "channel_dim_shared": 16,
+    "channel_dim_grid": 8,
+    "share_up_dim": 16,
+    "share_down_dim": 8,
+    "share_implementation": "primitives",
+    "share_batch_max_elements": 262144,
+    "decoding_dim": 4,
+    "softmax_dim": 2,
+    "softmax_implementation": "primitives",
+    "cummax_dim": 4,
+    "shift_dim": 4,
+    "nonlinear_dim": 16,
+    "shift_implementation": "primitives",
+    "cummax_implementation": "optimised",
+    "lse_tau": 0.1,
+    "layer_timing": false,
+    "direction_share_implementation": "primitives",
+    "direction_share_dim": 8
+  },
+  "training": {
+    "split": "training",
+    "iterations": 1500,
+    "learning_rate": 0.01,
+    "optimizer_betas": [
+      0.5,
+      0.9
+    ],
+    "optimizer_implementation": "default",
+    "diagnostics_implementation": "reference",
+    "seed": 2,
+    "device": "auto",
+    "runtime_device_dispatch": "global",
+    "step_timing": "wall",
+    "cuda_graph": false,
+    "cuda_graph_start": 100,
+    "cuda_graph_warmup": 3,
+    "sharing_stage_timing": false,
+    "operator_profile": false,
+    "operator_profile_start": 10,
+    "operator_profile_steps": 1,
+    "operator_profile_shapes": true,
+    "operator_profile_memory": false,
+    "operator_profile_stack": false,
+    "kl_weight": 1.0,
+    "reconstruction_weight": 10.0,
+    "shape_annealing_start": 0.01,
+    "marginal_annealing_start": 0.1,
+    "annealing_steps": 100
+  },
+  "logging": {
+    "save_model": false,
+    "wandb": true,
+    "wandb_project": "compressarc-final-ablation",
+    "wandb_entity": "arc_agi",
+    "wandb_mode": "online",
+    "wandb_tags": [
+      "final-ablation",
+      "sample40",
+      "seed2-rerun",
+      "steps1500",
+      "strict",
+      "projected_lse",
+      "seed2-final-lse-remaining"
+    ],
+    "log_config": true
+  },
+  "experiment": {
+    "name": "projected_lse_optimised_seed2_finish_eager_retry",
+    "task_ids": [
+      "08ed6ac7",
+      "1190e5a7",
+      "25ff71a9",
+      "3906de3d",
+      "694f12f3",
+      "868de0fa",
+      "8731374e",
+      "9aec4887",
+      "a416b8f3",
+      "a61ba2ce",
+      "aedd82e4",
+      "b527c5c6",
+      "bd4472b8",
+      "c9f8e694",
+      "d06dbe63",
+      "d22278a0",
+      "d5d6de2d",
+      "e5062a87",
+      "eb281b96",
+      "eb5a1d5d"
+    ],
+    "task_sample_seed": 42,
+    "seeds": [
+      2
+    ],
+    "variant": "projected-lse"
+  }
+}
